@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+  </head>
+  <body>
+    <h1>Richard Potter Resume</h1>
+    <hr />
+    <h2>Summary</h2>
+    <img
+      src="./assets/images/richard-selfie.jpg"
+      width="100"
+      alt="selfie of richard"
+    />
+    <p>
+      An experienced C# programmer currently studying Clojure and full stack web
+      development.
+    </p>
+    <hr />
+    <h2>Education</h2>
+    <p>
+      Bachelor of Electrical and Computer Systems Engineering<br />
+      Monash University, Clayton, Victoria, Australia<br />
+    </p>
+    <hr />
+    <h2>Work Experience</h2>
+
+    <h3>
+      Senior Software Engineer<br />
+      IR4 Pty. Ltd.<br />
+      Stapylton Queensland Australia<br />
+      Oct 2020 - Sept 2022<br />
+    </h3>
+    <p>
+      Trommel screen welding project.<br />
+      A <a href=" https://en.wikipedia.org/wiki/Trommel_screen">trommel</a> is
+      like a giant cylindrical sieve with a spiral inside. IR4 developed a
+      <a href="https://www.tei.com.au/products/steel-trommels"
+        >purpose built turnkey welding system</a
+      >
+      for welding the spiral and other parts into steel trommels. The trommel
+      was mounted on its side on rollers, and could be rotated, and a column and
+      boom moved a robot welder relative to the trommel, first laser scanning to
+      confirm the geometry, then applying welds between the part and the
+      trommel. The system was tested on about 6 different models of trommel. It
+      was designed to work with future models as long as they were within
+      certain parameters.
+    </p>
+    <h4>Project contributions:</h4>
+    <ul>
+      <li>Contribute to the overall system concept and design and workflow</li>
+      <li>
+        Architect and develop a desktop application that analyses a geometry
+        file of a trommel and creates all of the instructions for the robots to
+        fabricate the trommel
+      </li>
+      <li>This application could perform the following tasks</li>
+      <ul>
+        <li>
+          Import geometry files exported from CAD packages, find the individual
+          physical parts in the file, convert them to triangular meshes and save
+          the information in a database
+        </li>
+        <li>
+          Categorise the various imported parts according to the types of parts
+          expected
+        </li>
+        <li>
+          Spatially transform all parts into a standard orientation expected by
+          the system
+        </li>
+        <li>
+          Combine sets of parts and find the collision intersection loops
+          between them where welds would be need to be applied
+        </li>
+        <li>
+          Using different solid models of the system scanner and welder robot
+          end effectors, find reachable poses for the robot arm, within various
+          constraints, allowing the robot to reach in and scan and weld the
+          parts
+        </li>
+        <li>
+          Display the trommel parts in a User Interface (UI) allowing the user
+          to enable/disable selected parts or selected welds between parts
+        </li>
+        <li>Generate the required build instructions for the robots</li>
+        <li>
+          Display an animated 3D representation of the build produced by
+          stepping through the robot instructions
+        </li>
+        <li>Transmit the generated build to the robot system</li>
+      </ul>
+    </ul>
+    <h4>Project outcomes:</h4>
+    <p>
+      The system was delivered successfuly and cut the manuafacturing time for a
+      trommel from weeks to less than a day. The knowledge from the project is
+      expected to help greatly with future IR4 projects.
+    </p>
+    <h3>
+      Senior Software Engineer<br />
+      SSS Manufaturing Pty. Ltd.<br />
+      Yatala Queensland Australia<br />
+      May 2015 - Aug 2021<br />
+    </h3>
+    <p>
+      'SSS' stands for Smart Steel Systems. SSS Manufacturing developed a system
+      that could import building geometry from a file exported from a CAD
+      system, and automatically generate the robot instructions required to
+      fabricate the beams and columns in the building. SSS Manufacturing had a
+      large dedicated factory to house both a development team and a steel
+      manufacturing facility. The manufacturing facility consisted of a series
+      of custom made vice robots on tracks that could manipulate steel beams and
+      convey them though a manufacturing cell where several other robots would
+      make cuts with a plasma cutter, place plates in position and weld those
+      plates to the beam. The system also included a flat plate cutting
+      component where the required flat plates such as braces and cleats that
+      were to be welded to the beam could be cut from flat sheets with a robot
+      plasma cutter.
+    </p>
+    <h4>Project contributions:</h4>
+    <ul>
+      <li>Contribute to the overall system concept and design and workflow</li>
+      <li>
+        Architect and develop a desktop application that analyses a geometry
+        file of a building and creates all of the instructions for the robots to
+        fabricate the beams and columns in the building
+      </li>
+      <li>This application could perform the following tasks</li>
+      <ul>
+        <li>
+          Import geometry files exported from CAD packages, find the individual
+          physical parts in the file, convert them to triangular meshes and save
+          the information in a database
+        </li>
+        <li>
+          Find the flat plates such as braces and cleats and calculate plans to
+          cut them from flat plate, from a nested pattern
+        </li>
+        <li>
+          Combine sets of parts and find the collision intersection loops
+          between them where welds would be need to be applied
+        </li>
+        <li>
+          Using different solid models of the system scanner and welder robot
+          end effectors, find reachable poses for the robot arms, within various
+          constraints, allowing the robots to perform operations while avoiding
+          collision
+        </li>
+        <li>
+          Create plans for a pick-place robot to scan a plate, pick it up and
+          place and hold it on the beam
+        </li>
+        <li>
+          Create plans for robot to scan the beam and plate and deform the local
+          geometry to account for mismatches between the ideal model and the
+          actual model
+        </li>
+        <li>
+          Create plans for a welder robot to tack and then weld the plate to the
+          beam while being held by another robot
+        </li>
+        <li>
+          Display the beams in the building in a UI allowing the user to
+          enable/disable a selected beam
+        </li>
+        <li>
+          Display a selected beam in the building in a UI allowing the user to
+          enable/disable plates attached to the beam and enable/disable welds
+          for that plate
+        </li>
+        <li>
+          Display an animated 3D representation of the build for a single beam
+          by stepping through the robot instructions
+        </li>
+        <li>Transmit the generated build to the robot system</li>
+      </ul>
+    </ul>
+
+    <h4>Project contributions:</h4>
+    <ul>
+      <li>
+        With a lot of hard work our team got the system up and running and we
+        fabricated steel for several years.
+      </li>
+      <li>All of the knowledge gained was invaluable in future projects.</li>
+    </ul>
+
+    <h3>
+      Senior Software Engineer<br />
+      Australian Software Engineering<br />
+      Ashgrove Queensland Australia<br />
+      Jan 2010 - May 2015<br />
+    </h3>
+    <p>
+      My primary role at ASE was in developing a data acquisition and reporting
+      system for coal washing plants. One part of the system was a custom data
+      acquisition module which was located remote on site and was interfaced to
+      local Citect SCADA system controlling the washplant. This data acquisition
+      module would reliably replicate the data collected back to SQL servers in
+      Brisbane. Another part of the system was a reporting engine which
+      generated SSRS reports on this data using sophisticated SQL queries. The
+      final part of the system was a web based application to select a report to
+      view, enter parameters and view the generated reports.
+    </p>
+    <hr />
+    <h2>Skills</h2>
+    <ul>
+      <li>.Net C# and VB programming using async/await task based code</li>
+      <li>ASP MVC website design</li>
+      <li>Microsoft Silverlight</li>
+      <li>
+        UI design and creation using Windows Presentation Foundation (WPF), with
+        Model View ViewModel (MVVM) architecture
+      </li>
+      <li>3D animation using Eyeshot controls from devDept software</li>
+      <li>Xbim Toolkit for geometry import</li>
+      <li>
+        MSSQL Server, PostgreSQL and MySql database design, querying, stored
+        procedures, authorization, roles, deployment, integration
+      </li>
+      <li>Microsoft Reporting Services</li>
+      <li>
+        Object Relation Mapping (ORM) using Microsoft Entry Framework and
+        mico-orms such as NPoco
+      </li>
+      <li>
+        Dependency Injection (DI) to isolate different componenets of a complex
+        system
+      </li>
+      <li>Automated Unit Testing</li>
+      <li>
+        Functional Programming (FP) techniques such as immutability and Higher
+        Order Functions (HOF)
+      </li>
+      <li>3D Computer Aided Design (3D CAD) systems</li>
+      <li>Manipulation of 3D triangular meshes</li>
+      <li>
+        Mathematics of 3D modelling such as homogeneous transforms, surfaces,
+        planes, vectors, quaternions etc.
+      </li>
+      <li>
+        Souce control using Git, Mercurial, SubVersion, Team Foundation Server
+        with tools such as GitKraken, TortoiseHg and TortoiseSvn and practices
+        such as trunk based source control development protocol
+      </li>
+    </ul>
+
+    <hr />
+    <h2>Other</h2>
+    <p><a href="./public/hobbies.html">Hobbies</a></p>    
+    <p></p><a href="./public/contact-details.html">Contact Details</a></p>
+    <footer>
+      <p>© 2023 Richard Potter</p>
+    </footer>
+  </body>
+</html>
